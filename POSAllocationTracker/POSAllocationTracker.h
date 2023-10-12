@@ -2,19 +2,22 @@
 //  POSAllocationTracker.h
 //  POSAllocationTracker
 //
-//  Created by Pavel Osipov on 03.09.15.
-//  Copyright (c) 2015 Pavel Osipov. All rights reserved.
+//  Created by dmitry.golubev on 11.10.2023.
+//  Copyright © 2023 Pavel Osipov. All rights reserved.
 //
 
-#import "NSObject+POSAllocationTracker.h"
+#import <Foundation/Foundation.h>
+#import <POSAllocationTracker/POSAllocationTracker.h>
+#import <POSAllocationTracker/POSAllocationTrackerMacros.h>
+#import <POSAllocationTracker/NSObject+POSAllocationTracker.h>
+#import <POSAllocationTracker/AllocationTracker.h>
 
-@interface POSAllocationTracker : NSObject
+//! Project version number for POSAllocationTracker.
+FOUNDATION_EXPORT double POSAllocationTrackerVersionNumber;
 
-#if POS_ENABLE_RUNTIME_CHECKS
-+ (uint64_t)instanceCountForClass:(Class)aClass;
-+ (void)resetAllCounters;
-#endif
+//! Project version string for POSAllocationTracker.
+FOUNDATION_EXPORT const unsigned char POSAllocationTrackerVersionString[];
 
-@end
+// In this header, you should import all the public headers of your framework using statements like #import <POSAllocationTracker/PublicHeader.h>
 
 

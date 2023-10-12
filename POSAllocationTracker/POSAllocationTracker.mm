@@ -11,7 +11,7 @@
 #import "AllocationTracker.h"
 #import <objc/runtime.h>
 
-@implementation POSAllocationTracker
+@implementation POSAllocationTracker : NSObject 
 
 + (uint64_t)instanceCountForClass:(Class)aClass {
     return pos::AllocationTracker::tracker().instanceCountForClass(aClass);
