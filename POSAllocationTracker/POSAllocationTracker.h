@@ -10,7 +10,6 @@
 #import <POSAllocationTracker/POSAllocationTracker.h>
 #import <POSAllocationTracker/POSAllocationTrackerMacros.h>
 #import <POSAllocationTracker/NSObject+POSAllocationTracker.h>
-#import <POSAllocationTracker/AllocationTracker.h>
 
 //! Project version number for POSAllocationTracker.
 FOUNDATION_EXPORT double POSAllocationTrackerVersionNumber;

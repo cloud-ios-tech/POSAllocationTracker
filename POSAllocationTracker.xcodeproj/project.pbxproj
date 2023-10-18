@@ -11,10 +11,9 @@
 		21B907DC1B98966A00666D28 /* AllocationTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D21B98316300666D28 /* AllocationTracker.cpp */; };
 		21B907DD1B98967600666D28 /* NSObject+POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */; };
 		21B907DE1B98967A00666D28 /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
-		2878A40D2AD7045400F4D49F /* POSAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2878A40C2AD7045400F4D49F /* POSAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2813816F2AE04CD7000DCB52 /* POSAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2813816E2AE04CD7000DCB52 /* POSAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2878A4112AD7046200F4D49F /* POSAllocationTrackerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 217B9C1A1DA50BE700837570 /* POSAllocationTrackerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2878A4122AD7046500F4D49F /* NSObject+POSAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D41B98516200666D28 /* NSObject+POSAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2878A4132AD7046700F4D49F /* AllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D11B98311500666D28 /* AllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2878A4142AD7047300F4D49F /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
 		2878A4152AD7047500F4D49F /* NSObject+POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */; };
 		2878A4162AD7047700F4D49F /* AllocationTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D21B98316300666D28 /* AllocationTracker.cpp */; };
@@ -29,10 +28,9 @@
 		21B907D41B98516200666D28 /* NSObject+POSAllocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+POSAllocationTracker.h"; sourceTree = "<group>"; };
 		21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+POSAllocationTracker.mm"; sourceTree = "<group>"; };
 		21B907D71B9882C000666D28 /* POSAllocationTrackerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POSAllocationTrackerTests.m; sourceTree = "<group>"; };
-		21B907D91B98834400666D28 /* POSAllocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSAllocationTracker.h; sourceTree = "<group>"; };
 		21B907DA1B98834400666D28 /* POSAllocationTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POSAllocationTracker.mm; sourceTree = "<group>"; };
+		2813816E2AE04CD7000DCB52 /* POSAllocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSAllocationTracker.h; sourceTree = "<group>"; };
 		2878A40A2AD7045400F4D49F /* POSAllocationTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = POSAllocationTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2878A40C2AD7045400F4D49F /* POSAllocationTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSAllocationTracker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +54,9 @@
 		21B907AE1B982FBC00666D28 = {
 			isa = PBXGroup;
 			children = (
-				21B907B91B982FBC00666D28 /* POSAllocationTracker */,
+				2813816D2AE04CB7000DCB52 /* POSAllocationTracker */,
+				21B907B91B982FBC00666D28 /* Sources */,
 				21B907C61B982FBC00666D28 /* POSAllocationTrackerTests */,
-				2878A40B2AD7045400F4D49F /* POSAllocationTracker */,
 				21B907B81B982FBC00666D28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,10 +70,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21B907B91B982FBC00666D28 /* POSAllocationTracker */ = {
+		21B907B91B982FBC00666D28 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				21B907D91B98834400666D28 /* POSAllocationTracker.h */,
 				21B907DA1B98834400666D28 /* POSAllocationTracker.mm */,
 				217B9C1A1DA50BE700837570 /* POSAllocationTrackerMacros.h */,
 				21B907D41B98516200666D28 /* NSObject+POSAllocationTracker.h */,
@@ -83,7 +80,7 @@
 				21B907D11B98311500666D28 /* AllocationTracker.h */,
 				21B907D21B98316300666D28 /* AllocationTracker.cpp */,
 			);
-			path = POSAllocationTracker;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		21B907C61B982FBC00666D28 /* POSAllocationTrackerTests */ = {
@@ -103,10 +100,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2878A40B2AD7045400F4D49F /* POSAllocationTracker */ = {
+		2813816D2AE04CB7000DCB52 /* POSAllocationTracker */ = {
 			isa = PBXGroup;
 			children = (
-				2878A40C2AD7045400F4D49F /* POSAllocationTracker.h */,
+				2813816E2AE04CD7000DCB52 /* POSAllocationTracker.h */,
 			);
 			path = POSAllocationTracker;
 			sourceTree = "<group>";
@@ -118,9 +115,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2878A40D2AD7045400F4D49F /* POSAllocationTracker.h in Headers */,
+				2813816F2AE04CD7000DCB52 /* POSAllocationTracker.h in Headers */,
 				2878A4112AD7046200F4D49F /* POSAllocationTrackerMacros.h in Headers */,
-				2878A4132AD7046700F4D49F /* AllocationTracker.h in Headers */,
 				2878A4122AD7046500F4D49F /* NSObject+POSAllocationTracker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-lc++";
+				OTHER_LDFLAGS = "-l\"c++\"";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.golubev.POSAllocationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -424,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-lc++";
+				OTHER_LDFLAGS = "-l\"c++\"";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.golubev.POSAllocationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
