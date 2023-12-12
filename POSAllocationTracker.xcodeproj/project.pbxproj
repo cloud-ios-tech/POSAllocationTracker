@@ -10,10 +10,14 @@
 		21B907D31B98316300666D28 /* AllocationTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D21B98316300666D28 /* AllocationTracker.cpp */; };
 		21B907D61B98516200666D28 /* NSObject+POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */; };
 		21B907D81B9882C000666D28 /* POSAllocationTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D71B9882C000666D28 /* POSAllocationTrackerTests.m */; };
-		21B907DB1B98834400666D28 /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
 		21B907DC1B98966A00666D28 /* AllocationTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D21B98316300666D28 /* AllocationTracker.cpp */; };
 		21B907DD1B98967600666D28 /* NSObject+POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */; };
 		21B907DE1B98967A00666D28 /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
+		35EFC2FC2B27D8F4000CD90C /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
+		35EFC2FE2B27D992000CD90C /* POSAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D91B98834400666D28 /* POSAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35EFC3012B27DC2D000CD90C /* NSObject+POSAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D41B98516200666D28 /* NSObject+POSAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35EFC3022B27DC32000CD90C /* POSAllocationTrackerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 217B9C1A1DA50BE700837570 /* POSAllocationTrackerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35EFC3032B27DC37000CD90C /* AllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D11B98311500666D28 /* AllocationTracker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		217B9C1A1DA50BE700837570 /* POSAllocationTrackerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSAllocationTrackerMacros.h; sourceTree = "<group>"; };
-		21B907B71B982FBC00666D28 /* libPOSAllocationTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPOSAllocationTracker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B907B71B982FBC00666D28 /* POSAllocationTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = POSAllocationTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B907C21B982FBC00666D28 /* POSAllocationTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POSAllocationTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B907C81B982FBC00666D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B907D11B98311500666D28 /* AllocationTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllocationTracker.h; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 		21B907B81B982FBC00666D28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21B907B71B982FBC00666D28 /* libPOSAllocationTracker.a */,
+				21B907B71B982FBC00666D28 /* POSAllocationTracker.framework */,
 				21B907C21B982FBC00666D28 /* POSAllocationTrackerTests.xctest */,
 			);
 			name = Products;
@@ -111,11 +115,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		35EFC2FD2B27D98B000CD90C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35EFC2FE2B27D992000CD90C /* POSAllocationTracker.h in Headers */,
+				35EFC3012B27DC2D000CD90C /* NSObject+POSAllocationTracker.h in Headers */,
+				35EFC3022B27DC32000CD90C /* POSAllocationTrackerMacros.h in Headers */,
+				35EFC3032B27DC37000CD90C /* AllocationTracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		21B907B61B982FBC00666D28 /* POSAllocationTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21B907CB1B982FBC00666D28 /* Build configuration list for PBXNativeTarget "POSAllocationTracker" */;
 			buildPhases = (
+				35EFC2FD2B27D98B000CD90C /* Headers */,
 				21B907B31B982FBC00666D28 /* Sources */,
 				21B907B41B982FBC00666D28 /* Frameworks */,
 				21B907B51B982FBC00666D28 /* CopyFiles */,
@@ -126,8 +145,8 @@
 			);
 			name = POSAllocationTracker;
 			productName = POSAllocationTracker;
-			productReference = 21B907B71B982FBC00666D28 /* libPOSAllocationTracker.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 21B907B71B982FBC00666D28 /* POSAllocationTracker.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		21B907C11B982FBC00666D28 /* POSAllocationTrackerTests */ = {
 			isa = PBXNativeTarget;
@@ -168,6 +187,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 21B907AE1B982FBC00666D28;
@@ -197,8 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B907D31B98316300666D28 /* AllocationTracker.cpp in Sources */,
-				21B907DB1B98834400666D28 /* POSAllocationTracker.mm in Sources */,
 				21B907D61B98516200666D28 /* NSObject+POSAllocationTracker.mm in Sources */,
+				35EFC2FC2B27D8F4000CD90C /* POSAllocationTracker.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +338,9 @@
 		21B907CC1B982FBC00666D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.POSAllocationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -327,7 +349,9 @@
 		21B907CD1B982FBC00666D28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.POSAllocationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
