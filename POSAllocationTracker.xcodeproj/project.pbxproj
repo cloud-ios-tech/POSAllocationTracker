@@ -17,6 +17,8 @@
 		2878A4142AD7047300F4D49F /* POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907DA1B98834400666D28 /* POSAllocationTracker.mm */; };
 		2878A4152AD7047500F4D49F /* NSObject+POSAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D51B98516200666D28 /* NSObject+POSAllocationTracker.mm */; };
 		2878A4162AD7047700F4D49F /* AllocationTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B907D21B98316300666D28 /* AllocationTracker.cpp */; };
+		35FDD3DD2B30706900619C0F /* POSAllocationTrackerBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FDD3DC2B30706900619C0F /* POSAllocationTrackerBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35FDD3DE2B3070F400619C0F /* AllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B907D11B98311500666D28 /* AllocationTracker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		21B907DA1B98834400666D28 /* POSAllocationTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POSAllocationTracker.mm; sourceTree = "<group>"; };
 		2813816E2AE04CD7000DCB52 /* POSAllocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSAllocationTracker.h; sourceTree = "<group>"; };
 		2878A40A2AD7045400F4D49F /* POSAllocationTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = POSAllocationTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FDD3DC2B30706900619C0F /* POSAllocationTrackerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSAllocationTrackerBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 		21B907B91B982FBC00666D28 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				35FDD3DC2B30706900619C0F /* POSAllocationTrackerBase.h */,
 				21B907DA1B98834400666D28 /* POSAllocationTracker.mm */,
 				217B9C1A1DA50BE700837570 /* POSAllocationTrackerMacros.h */,
 				21B907D41B98516200666D28 /* NSObject+POSAllocationTracker.h */,
@@ -116,8 +120,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2813816F2AE04CD7000DCB52 /* POSAllocationTracker.h in Headers */,
+				35FDD3DD2B30706900619C0F /* POSAllocationTrackerBase.h in Headers */,
 				2878A4112AD7046200F4D49F /* POSAllocationTrackerMacros.h in Headers */,
 				2878A4122AD7046500F4D49F /* NSObject+POSAllocationTracker.h in Headers */,
+				35FDD3DE2B3070F400619C0F /* AllocationTracker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

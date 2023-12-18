@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <POSAllocationTracker/POSAllocationTracker.h>
+#import <POSAllocationTracker/POSAllocationTrackerBase.h>
 #import <POSAllocationTracker/POSAllocationTrackerMacros.h>
 #import <POSAllocationTracker/NSObject+POSAllocationTracker.h>
 
